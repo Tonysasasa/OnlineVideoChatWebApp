@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    /* Change the background color of the page */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container,
+.connected-users,
+.new-meeting,
+.new-chat {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.replace {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.social-icons {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-right: 500px;
+    min-width: 200px;
+}
+
+.ButtonClick {
+    border: none;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Content {
+    display: none;
+}
+
+.connected-users {
+    flex: 1;
+    max-width: 350px;
+}
+
+.connected-users h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    /* Increase the font size for the title */
+}
+
+.connected-users ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+.connected-users li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.connected-users li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.connected-users li i.break {
+    margin-left: 20px;
+}
+
+.connected-users li i.fa-check-square {
+    font-size: 20px;
+}
+
+.connected-users li i.online,
+.connected-users li i.fa-child {
+    color: #02fb10;
+}
+
+.connected-users li i.offline {
+    color: #e61876;
+}
+
+/* Add a separator after each connected user */
+.connected-users li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Optional separation between blocks */
+.container>div:not(:last-child) {
+    margin-right: 20px;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-meeting,
+.new-chat {
+    margin-bottom: 20px;
+}
+
+.new-meeting button,
+.new-chat button {
+    padding: 10px 20px;
+    background-color: #4299b9;
+    /* Blue background color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+
+
+.new-meeting button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+.join-meeting {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.join-meeting input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.join-meeting button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+.join-meeting button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+
+#logoutBtn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    /* Red background color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#logoutBtn:hover {
+    background-color: #d32f2f;
+    /* Darker red on hover */
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(241, 69%, 40%);
+}

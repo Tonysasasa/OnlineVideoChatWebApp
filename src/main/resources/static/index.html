@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connected Users</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="new-chat">
+        <button id="newChatBtn">New Chat</button>
+      </div>
+
+      <div class="new-meeting">
+        <button id="newMeetingBtn">New Meeting</button>
+        <div class="join-meeting">
+          <input type="text" placeholder="Meeting ID" id="meetingName">
+          <button id="joinMeetingBtn">Join</button>
+        </div>
+      </div>
+      <div class="connected-users">
+
+        <div class="ButtonClick">
+          <h4><u>Online Users</u></h4>
+          <img id="button0" src="./images/icon-plus.svg" alt="PlusIcon" />
+        </div>
+
+        <div class="Content">
+          <ul id="userList"></ul>
+        </div>
+
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="image-container">
+        <img class="replace"
+          src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/direct/1586534415247-1586351118228-Zoom%20Alternatives.png"
+          alt="Image">
+
+      </div>
+
+      <div id="chat-page" class="hidden">
+        <div class="chat-container">
+          <div class="chat-header">
+            <h2>New Chat</h2>
+          </div>
+          <div class="connecting">
+            Connecting...
+          </div>
+          <ul id="messageArea">
+
+          </ul>
+          <form id="messageForm" name="messageForm">
+            <div class="form-group">
+              <div class="input-group clearfix">
+                <input type="text" id="message" placeholder="Type a message..." autocomplete="off"
+                  class="form-control" />
+                <button type="submit" class="primary">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <br>
+      <div class="social-icons">
+        <p>Contact Us</p>
+        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/Tonysasasa" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Developed by <a href="https://github.com/Tonysasasa">Tonysasasa </a>.
+  </div>
+  <script src="js/button.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
